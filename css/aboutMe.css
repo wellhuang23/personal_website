@@ -1,0 +1,150 @@
+.startVideoDiv {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+.userPictureDiv {
+	position: absolute;
+	filter: invert(100%);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 0;
+}
+#upperText {
+	position: absolute;
+	top: 25%;
+	right: 20%;
+}
+#downerText {
+	position: absolute;
+	bottom: 25%;
+	left: 25%;
+}
+#leftText {
+	position: absolute;
+	top: 35%;
+	left: 20%;
+}
+#rightText {
+	position: absolute;
+	bottom: 35%;
+	right: 20%;
+}
+.copyrightText {
+	color: #777;
+	display: flex;
+	justify-content: center;
+}
+
+/* intro text */
+#entry{
+	/* background:#000; */
+	margin: 0;
+	width:100%;
+  	height:100%;
+	background-size: cover;
+}
+.introText-1 {
+	font-size: 800%;
+}
+.introText-2 {
+	font-size: 400%;
+}
+.introText-3 {
+	font-size: 1200%;
+}
+
+/* point down arrow */
+.arrow {
+  	margin:auto; /* Required */
+	position:absolute; /* Required */
+	bottom:60px; /* Aligns at the bottom */
+	left:0;
+	right:0; /* Aligns horizontal center */
+  	width: 42px;
+  	height: 20px; /* will be shrinked to size */ 
+}
+.jump {
+    /*animation*/
+    -webkit-animation: arrowJump 1s infinite; /* Safari 4+ */
+	-moz-animation:    arrowJump 1s infinite; /* Fx 5+ */
+	-o-animation:      arrowJump 1s infinite; /* Opera 12+ */
+	animation:         arrowJump 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes arrowJump {
+  0%   { opacity: 0;}
+  100% { opacity: 1; 
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -0-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+  
+}
+
+/* intro myself page */
+#about{
+	background:#000;
+	margin: 0;
+	width:100%;
+  	height:100%;
+	background-size: cover;
+}
+.flex {
+    display: block;
+	margin: 0;
+	width:100%;
+    height:100%;
+    overflow: hidden;
+    display: flex;
+
+}
+.leftHalf {
+  	background-color: #f2f2f2;
+  	background-size: cover;
+ 	height: 100%;
+ 	width:50%;
+}
+.rightHalf {
+	background-color: #000;
+  	background-size: cover;
+  	height: 100%;
+	width:50%;
+}
+.textContainer { 
+   	width: 100%; 
+   	word-wrap: break-word;
+   	align-content:center;
+   	text-align:center;
+    font-family: 'Ubuntu';
+  	font-style: Light;
+  	color: #333333;
+  	font-weight: 300;
+   	font-size: 15px;
+}
+
+/* description of picture */
+.pictureDescription {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	text-align:center;
+}
+.pictureInverse {
+	filter: invert(100%);
+}
+
+.copyrightText {
+	color: #777;
+	display: flex;
+	justify-content: center;
+}

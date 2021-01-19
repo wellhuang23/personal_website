@@ -1,0 +1,14 @@
+$("#userPicture").hide();
+$("#upperText").hide();
+$("#leftText").hide();
+$("#rightText").hide();
+$("#downerText").hide();
+$(".startVideoDiv").click(function(){
+	$("#startVideo").fadeOut(1000);
+	$("#userPicture").fadeIn(3000);
+	$("#upperText").fadeIn(4000);
+	$("#leftText").fadeIn(5000);
+	$("#rightText").fadeIn(6000);
+	$("#downerText").fadeIn(7000);
+	$(".userPictureDiv").css({"z-index":2});
+});

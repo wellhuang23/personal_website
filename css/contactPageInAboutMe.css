@@ -1,0 +1,95 @@
+.contactTextName {
+	color: #999;
+	font-size: 50px;
+}
+.contactTextCity {
+	color: #666;
+	font-size: 30px;
+	display: flex;
+	justify-content: flex-end;
+}
+.contactTextImfo {
+	color: #666;
+	font-size: 30px;
+	font-family: 'Ubuntu';
+}
+hr {
+  border-color: rgba(255,255,255,.8); ;
+}
+
+.socialMediaList {
+  position: relative;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.socialMediaList li a {
+  color: #fff;
+}
+
+.socialMediaList li {
+  position: relative; 
+  top: 0;
+  left: -20px;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin: 10px auto;
+  line-height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.socialMediaList li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.socialMediaList li:hover {
+  background-color: #fff; 
+}
+
+.socialMediaList li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.socialMediaList li:hover a {
+  color: #111;
+}
+
+hr {
+  border-color: rgba(255,255,255,.8); ;
+}
+
+@media screen and (max-width: 569px) {
+  .socialMediaList {
+    left: 0;
+  }
+  .socialMediaList li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .socialMediaList li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}

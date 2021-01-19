@@ -1,0 +1,93 @@
+* {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+/* bar */
+.graphCont {
+  width: calc(100% - 40px);
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto 0 auto;
+}
+.bar {
+  height: 20px;
+  max-width: 800px;
+  margin: 0 auto 25px auto;
+  line-height: 20px;
+  font-size: 80%;
+  color: rgb(255, 255, 255);
+  padding: 0 0 0 10px;
+  position: relative;
+  border-radius: 15px;
+}
+.bar::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 20px;
+  top: 0;
+  z-index: -2;
+  background: rgb(235, 235, 235);
+  border-radius: 15px;
+}
+.in-view .bar::after {
+  content: "";
+  background: rgb(230, 126, 34);
+  height: 20px;
+  transition: 3s;
+  display: block;
+  width: 100%;
+  -webkit-animation: barBefore 1 3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+/* bar setting */
+.bar1::after {
+  max-width: 65%;
+}
+.bar2::after {
+  max-width: 60%;
+}
+.bar3::after {
+  max-width: 85%;
+}
+.bar4::after {
+  max-width: 85%;
+}
+.bar5::after {
+  max-width: 85%;
+}
+.bar6::after {
+  max-width: 75%;
+}
+.bar7::after {
+  max-width: 75%;
+}
+.bar8::after {
+  max-width: 75%;
+}
+.bar9::after {
+  max-width: 75%;
+}
+.bar10::after {
+  max-width: 75%;
+}
+.bar11::after {
+  max-width: 60%;
+}
+.bar12::after {
+  max-width: 55%;
+}
+
+@-webkit-keyframes barBefore {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
